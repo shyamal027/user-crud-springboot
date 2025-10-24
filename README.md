@@ -30,15 +30,14 @@ Endpoints:
 2. Wait for dependencies to download.
 3. Run `UserCrudApplication` as Spring Boot App.
 
-## Test using curl / Postman
-Example create:
-```bash
-curl -X POST http://localhost:8080/api/users -H "Content-Type: application/json" -d '{ "name":"Ajay", "email":"ajay@example.com", "salary":50000 }'
-```
-Get list:
-```bash
-curl http://localhost:8080/api/users
-```
+## Test using Postman
+Test using Postman:
+POST http://localhost:8080/api/users   (Body: {"name":"Ajay","email":"ajay@example.com","salary":50000})
+GET  http://localhost:8080/api/users
+GET  http://localhost:8080/api/users/1
+PUT  http://localhost:8080/api/users/1   (Body: {"name":"Ajay Kumar","email":"ajayk@example.com","salary":60000})
+DELETE http://localhost:8080/api/users/1
+
 
 ## Notes
 - Validation errors and other errors return structured JSON with messages.
