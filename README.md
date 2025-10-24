@@ -32,10 +32,15 @@ Endpoints:
 
 ## Test using Postman
 Test using Postman:
-POST http://localhost:8080/api/users   (Body: {"name":"Ajay","email":"ajay@example.com","salary":50000})
+
+POST http://localhost:8080/api/users   (Body: {"name":"Shyamal","email":"shyamal@example.com","salary":60000})
+
 GET  http://localhost:8080/api/users
+
 GET  http://localhost:8080/api/users/1
-PUT  http://localhost:8080/api/users/1   (Body: {"name":"Ajay Kumar","email":"ajayk@example.com","salary":60000})
+
+PUT  http://localhost:8080/api/users/1   (Body: {"name":"Shyamal","email":"shyamal@example.com","salary":75000})
+
 DELETE http://localhost:8080/api/users/1
 
 
